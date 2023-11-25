@@ -1,0 +1,16 @@
+.layout{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #f05a24;
+}
+#banner{
+    width: 100%;
+    height: auto;
+}
+
+#submitimg{
+    width: 200px;
+    height: auto;
+    margin-left: 20%;
+}
+

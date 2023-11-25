@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Layout</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Home Page</h1>
+    <table class="layout" border="2">
+        <thead>
+            <tr>
+                <th><img src="E:\Django\practice\Basic HTML\Workshop\radio.png" height="80px" width="90px"></th>
+                <th colspan="4"><strong style="font-size: 40px;">Radio Station</strong><br><small>Rise your voice</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: center; height:50px;">
+                <td><a href="#">Link 1</a></td>
+                <td><a href="#">Link 2</a></td>
+                <td><a href="#">Link 3</a></td>
+                <td><a href="#">Link 4</a></td>
+                <td><a href="#">Link 5</a></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <img id="banner" src="E:\Django\practice\Basic HTML\Workshop\radiobanner.png">
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 80px;">Notification</td>
+                <td colspan="4"><em>World is listening to you, let your thoughts and words spread around!</em></td>
+            </tr>
+            <tr>
+                <form>
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="firstname">First Name</label></td>
+                        <td colspan="2"><input type="text" name="firstname" placeholder="Enter your first name"/></td>
+                        <td rowspan="10">
+                            <img id="submitimg" src="E:\Django\practice\Basic HTML\Workshop\Sub.png">
+                        </td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="lastname">Last Name</label></td>
+                        <td colspan="2"><input type="text" name="lastname" placeholder="Enter your last name"></td>
+                    </tr>
+
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="gender">Gender</label></td>
+                            <td colspan="2">
+                                <input type="radio" name="gender" value="male"/>Male
+                                <input type="radio" name="gender" value="female"/>Female
+                                <input type="radio" name="gender" value="other"/>Other
+                            </td>
+                    </tr>
+
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="dob">Date of Birth</label></td>
+                        <td colspan="2"><input type="date" name="dob"></td>
+                    </tr>
+
+                    <tr style="text-align: left; ">
+                        <td colspan="2"><label for="qualification">Qualification:</label></td>
+                            <td colspan="2">
+                                <input type="checkbox" name="qualification" value="mca"/>MCA
+                                <input type="checkbox" name="qualification" value="mba"/>MBA
+                                <input type="checkbox" name="qualification" value="mtech"/>MTECH
+                                <input type="checkbox" name="qualification" value="other"/>Other
+
+                            </td>
+                    </tr>
+
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="phone">Contact</label></td>
+                        <td colspan="2">
+                            <input type="tel" name="phone"/>
+                        </td>
+                    </tr>
+
+                    <tr style="text-align: left;">
+                        <td colspan="2">
+                            <label for="email">Email</label></td>
+                            <td colspan="2"><input type="email" name="email" placeholder="@gmail.com"/></td>
+                        </td>
+                    </tr>
+
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="address">Address:</label></td>
+                        <td colspan="2"><textarea rows="3" cols="30" placeholder="Enter your address" name="address"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr style="text-align: left;">
+                        <td colspan="2"><label for="dept">Department</label></td>
+                            <td colspan="2"><select name="dept">
+                                <option value="">--select--</option>
+                                <option value="msds">MSc DS</option>
+                                <option value="mscea">MSc EA</option>
+                                <option value="ballb">BA LLB</option>
+                                <option value="mbs">MBA</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr style="text-align: center;">
+                        <td colspan="4"><button type="submit">Register</button>
+                            <button type="reset">Cancel</button>
+                        </td>
+                    </tr>
+                </form>
+            </tr>
+
+            <tr>
+                <td colspan="5" style="text-align: center; font-size: 30px;"><b>Login Form</b></td>
+            </tr>
+
+            <form action="">
+                <tr style="text-align: center;">
+                    <td colspan="5"><label for="username">Username</label>
+                    <input type="text" name="username"></td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="5"><label for="password">Password</label>
+                    <input type="password" name="password"></td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="5"><button type="submit">Login</button>
+                        <button type="reset">Cancel</button>
+                    </td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+</body>
+</html>
